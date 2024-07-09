@@ -1,10 +1,15 @@
 ---
+# Keep this YAML front matter block to trigger Jekyll processing.
+# See https://jekyllrb.com/docs/frontmatter for more information.
 ---
-@import "{{ site.theme }}";
-/* "{{ site.theme }}" = Your theme name */
-/* Eg: @import 'jekyll-theme-cayman'; */
 
-/* Your css rules goes after this */
-h1 {
-  color: green;
+@import "{{ site.theme }}";
+
+// Hide “This site is open source. Improve this page.”
+.footer {
+  display: none;
+}
+
+h2 {
+   color: green;
 }
